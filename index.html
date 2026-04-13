@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Dashboard | Nicholas Kyalo</title>
+
+  <title>Nicholas Kyalo | Portfolio</title>
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -11,63 +12,69 @@
 
 <body>
 
+<!-- NAV -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="cv.html">CV</a>
+  <a href="creative.html">Creative</a>
+</nav>
+
 <div class="container">
 
-  <!-- PROFILE -->
-  <div class="card profile">
-    <img src="assets/profile.jpg" alt="Profile">
-
+  <!-- HERO -->
+  <div class="card" style="text-align:center;">
     <h1>Nicholas Kyalo</h1>
     <p>Actuarial Science Student | Risk Analyst | Data Enthusiast</p>
 
     <div class="links">
       <a href="cv.pdf" download>Download CV</a>
-      <a href="https://github.com/">GitHub</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
     </div>
   </div>
 
   <!-- STATS -->
-  <div class="stats">
-    <div class="card">
-      <h2 id="projectsCount">0</h2>
-      <p>Projects</p>
-    </div>
-
-    <div class="card">
-      <h2 id="skillsCount">0</h2>
-      <p>Skills</p>
-    </div>
-
-    <div class="card">
-      <h2>1</h2>
-      <p>Portfolio</p>
-    </div>
+  <div class="card">
+    <h3>Dashboard Overview</h3>
+    <p>Projects: 3 | Skills: Excel, Python, R, Risk Modeling</p>
   </div>
 
   <!-- PROJECTS -->
   <div class="card">
-    <h3>Projects</h3>
-    <ul>
-      <li>Insurance Risk Model</li>
-      <li>Financial Data Analysis</li>
-      <li>Monte Carlo Simulation</li>
-    </ul>
+    <h3>📊 Projects</h3>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h4>Insurance Risk Model</h4>
+        <p>Probabilistic modeling of insurance claims using statistical distributions.</p>
+        <span>Python • Stats</span>
+      </div>
+
+      <div class="project-card">
+        <h4>Financial Data Analysis</h4>
+        <p>Analyzed financial datasets to extract trends and insights.</p>
+        <span>Excel • R</span>
+      </div>
+
+      <div class="project-card">
+        <h4>Monte Carlo Simulation</h4>
+        <p>Simulated risk scenarios to model uncertainty and variability.</p>
+        <span>Python • Simulation</span>
+      </div>
+
+    </div>
   </div>
 
-  <!-- SKILLS -->
+  <!-- ABOUT -->
   <div class="card">
-    <h3>Skills</h3>
-    <ul>
-      <li>Excel</li>
-      <li>Python</li>
-      <li>R Programming</li>
-      <li>Risk Modeling</li>
-    </ul>
+    <h3>About Me</h3>
+    <p>
+      Actuarial Science student focused on risk modeling, financial mathematics, and data-driven decision making.
+    </p>
   </div>
 
 </div>
 
-<script src="app.js"></script>
-
 </body>
-</html>
+    </html>
